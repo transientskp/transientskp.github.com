@@ -1,0 +1,156 @@
+---
+layout: default
+title: Subversion
+---
+<h1>Repository Instructions</h1>
+
+<p>This page gives a brief overview of interfacting with our repositories
+using the standard &quot;svn&quot; command-line client, available <a
+href="http://subversion.tigris.org/getting.html">here</a>. You might
+prefer a graphical interface: <a
+href="http://subversion.tigris.org/links.html#all-clients">some
+suggestions are available</a>.</p>
+
+<p>For a complete guide to Subversion, this (free!) <a
+href="http://svnbook.red-bean.com/">on-line book</a> is invaluable.</p>
+
+<p>The document repository is poorly indexed, which can make things hard
+to find. There's an incomplete list of available documents on the <a
+href="http://www.lofar.org/operations/doku.php?id=tkp:document_index">LOFAR
+wiki</a> to which you are encouraged to add.</p>
+
+<p><i>Examples are for the <a
+href="http://svn.transientskp.org/docs/">document</a> repository.  For
+the <a href="http://svn.transientskp.org/code/">code</a> repository
+replace "docs" with code".</i></p>
+
+<hr/>
+</center>
+<table border="0" width="100%">
+ <tr>
+  <td width="50%" valign="top">
+   <ul>
+     <li><a href="#import">Import/upload a file for the first time</a></li>
+ <li><a href="#get-version">Download a specific version of a file</a></li>
+     <li><a href="#checkout-repos">Checkout the repository</a></li>
+     <li><a href="#checkout-version">Checkout a specific version of the repository</a></li>
+     <li><a href="#checkout-dir">Checkout a sub-area of the repository</a></li>
+     <li><a href="#checkin">Checkin a file</a></li>
+     <li><a href="#add-new">Add a new file</a></li>
+   </ul>
+  </td>
+  <td width="50%" valign="top">
+   <ul>
+     <li><a href="#remove">Remove a file</a></li>
+     <li><a href="#move">Move a file location</a></li>
+     <li><a href="#rename">Rename a file</a></li>
+     <li><a href="#history">View a file's history</a></li>
+     <li><a href="#status">Check the status of files in your local repository</a></li>
+     <li><a href="#update">Bring your version up to date</a></li>
+   </ul>
+  </td>
+ </tr>
+</table>
+</ul>
+<hr/>
+<a name="import"/><h4>To import/upload a file:</h4>
+<i>(useful if you don't want to check out the repository to your local machine, but simply want to add a new document):</i>
+ <ul>
+  <li> <b>$</b> svn import mynewfile.pdf http://svn.transientskp.org/docs/Documents/mynewfile.pdf -m "adding new document"</li>
+ </ul>
+<hr/>
+<a name="get-version"/><h4>To download a specific version of a file:</h4>
+  <ul>
+   <li> <b>$</b> svn export http://svn.transientskp.org/docs/Documents/TKP_dcla_project_plan.pdf@30 ./TKP_project_plan_rev30.pdf
+     <br/>
+     <i>( creates "TKP_project_plan_rev30.pdf" locally )</i>
+   </li>
+  </ul>
+<hr/>
+<a name="checkout-repos"/><h4>To checkout the repository to a directory on your machine:</h4>
+ <ul>
+<li> <b>$</b> svn checkout http://svn.transientskp.org/docs/   tkp-document-repository<br/>
+  <i>( creates "tkp-document-repository/" directory locally )</i>
+</li>
+ </ul>
+<hr/>
+
+<a name="checkout-version"/><h4>To checkout a specific version of the repository to a directory on your machine:</h4>
+  <ul>
+     <li> <b>$</b> svn co http://svn.transientskp.org/docs@10 repository-rev10<br/>
+       <i>( creates "repository-rev10/" directory locally )</i>
+ </li>
+  </ul>
+ <hr/>
+
+<a name="checkout-dir"/><h4>To checkout only one directory in the repository to a directory on your machine:</h4>
+ <ul>
+  <li> <b>$</b> svn co http://svn.transientskp.org/docs/Documents docs-only<br/>
+    <i>( creates "docs-only/" directory locally)</i>
+  </li>
+ </ul>
+<hr/>
+
+<a name="checkin"/><h4>To checkin a new version of an existing file:</h4>
+ <ol>
+  <li> Modify documentX from within i.e. "tkp-document-repository/Documents" directory</li>
+  <li> <b>$</b> svn commit documentX -m "changed xxx"</li>
+ </ol>
+<hr/>
+
+<a name="add-new"/><h4>To add new file(s):</h4>
+ <ol>
+   <li> Create or copy documentY to "tkp-document-repository/Documents/" created above.</li>
+   <li> <b>$</b> svn add documentY documentZ (from within "tkp-document-repository/Documents/")</li>
+   <li> <b>$</b> svn commit -m "new document"
+ </ol>
+<hr/>
+
+<a name="remove"/><h4>To remove file(s) from the list:</h4>
+ <ol>
+  <li> <b>$</b> svn remove documentA documentB (from within "tkp-document-repository/Documents/")</li>
+  <li> <b>$</b> svn commit -m "remove documents"
+ </ol>
+<hr/>
+
+<a name="move"/><h4>To move a file:</h4>
+ <ol>
+   <li> <b>$</b> svn move documentA directory/</li>
+   <li> <b>$</b> svn commit -m "move document to appropriate directory"
+ </ol>
+ <ul>
+   <li> <i>Note that file history is maintained!</i> </li>
+ </ul>
+<hr/>
+
+<a name="rename"/><h4>To rename a file:</h4>
+ <ol>
+  <li> <b>$</b> svn rename oldname newname</li>
+  <li> <b>$</b> svn commit -m "gave file a more desciptive name"
+ </ol>
+ <ul>
+  <li> <i>Note that file history is maintained!</i> </li>
+ </ul>
+<hr/>
+
+<a name="history"/><h4>To view the history of a file:</h4>
+ <ul>
+   <p> <b>$</b> svn log filename</p>
+  </li>
+ </ul>
+<hr/>
+
+<a name="status"/><h4>To check the status of your local repository:</h4>
+ <ul>
+  <li> From within the "tkp-document-repository/" directory:
+   <p> <b>$</b> svn status</p>
+  </li>
+ </ul>
+<hr/>
+
+<a name="update"/><h4>To bring your local copy of the repository up to date:</h4>
+ <ul>
+  <li> From within the "tkp-document-repository/" directory:
+   <p> <b>$</b> svn update</p>
+  </li>
+ </ul>

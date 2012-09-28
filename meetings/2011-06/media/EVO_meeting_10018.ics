@@ -1,0 +1,50 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//evo.caltech.edu/NONSGML EVO V1.0//EN
+METHOD:PUBLISH
+BEGIN:VEVENT
+CREATED:20110614T092131Z
+UID:20110627T050000Z-24679-354999-@evo.caltech.edu
+SUMMARY:LOFAR TKP Meeting
+DESCRIPTION:Collaboration Meeting, 27.-29. June 2011, AmsterdamMeeting Access Information:\n- Meeting URL\nhttp://evo.caltech.edu/evoNext/koala.jnlp?meeting=eiese9vuv2anavIIatIi
+\n- Password: tkp0611ams\n- Phone Bridge\nID: 10 0182\nPassword: 7144\n\nEVO Phone Bridge Info: http://evo.caltech.edu/evoGate/telephone.jsp
+URL:http://evo.caltech.edu/evoNext/koala.jnlp?meeting=eiese9vuv2anavIIatIi
+
+LOCATION:Universe Community
+CATEGORIES:EVO Virtual Meeting
+CLASS:PUBLIC
+DTSTART:20110627T050000Z
+DTEND:20110627T180000Z
+DTSTAMP:20110614T092131Z
+END:VEVENT
+BEGIN:VEVENT
+CREATED:20110614T092131Z
+UID:20110628T050000Z-24679-355000-@evo.caltech.edu
+SUMMARY:LOFAR TKP Meeting
+DESCRIPTION:Collaboration Meeting, 27.-29. June 2011, AmsterdamMeeting Access Information:\n- Meeting URL\nhttp://evo.caltech.edu/evoNext/koala.jnlp?meeting=eiese9vuv2anavIIatIi
+\n- Password: tkp0611ams\n- Phone Bridge\nID: 10 0182\nPassword: 7144\n\nEVO Phone Bridge Info: http://evo.caltech.edu/evoGate/telephone.jsp
+URL:http://evo.caltech.edu/evoNext/koala.jnlp?meeting=eiese9vuv2anavIIatIi
+
+LOCATION:Universe Community
+CATEGORIES:EVO Virtual Meeting
+CLASS:PUBLIC
+DTSTART:20110628T050000Z
+DTEND:20110628T180000Z
+DTSTAMP:20110614T092131Z
+END:VEVENT
+BEGIN:VEVENT
+CREATED:20110614T092131Z
+UID:20110629T050000Z-24679-355001-@evo.caltech.edu
+SUMMARY:LOFAR TKP Meeting
+DESCRIPTION:Collaboration Meeting, 27.-29. June 2011, AmsterdamMeeting Access Information:\n- Meeting URL\nhttp://evo.caltech.edu/evoNext/koala.jnlp?meeting=eiese9vuv2anavIIatIi
+\n- Password: tkp0611ams\n- Phone Bridge\nID: 10 0182\nPassword: 7144\n\nEVO Phone Bridge Info: http://evo.caltech.edu/evoGate/telephone.jsp
+URL:http://evo.caltech.edu/evoNext/koala.jnlp?meeting=eiese9vuv2anavIIatIi
+
+LOCATION:Universe Community
+CATEGORIES:EVO Virtual Meeting
+CLASS:PUBLIC
+DTSTART:20110629T050000Z
+DTEND:20110629T180000Z
+DTSTAMP:20110614T092131Z
+END:VEVENT
+END:VCALENDAR

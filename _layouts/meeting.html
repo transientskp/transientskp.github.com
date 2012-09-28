@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<link rel="stylesheet" type="text/css" href="/media/tkp.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="/media//print.css" media="print" />
+<link rel="shortcut icon" href="/media/lofar.ico" type="image/ico" />
+<title>{{ page.meeting }} :: {{ page.title }}</title>
+</head>
+
+<body>
+
+<div id="wholepage">
+
+<div id="header">
+  <div class="mainheader"><h1>{{ page.meeting }}</h1>
+  <p>{{ page.dates }}, {{ page.location }}</p></div>
+</div>
+
+<!-- Sidebar to be displayed with all pages  -->
+
+<div id="sidecontainer">
+  <h2>This Meeting</h2>
+  <ul class="nav">
+    <li><a href="index.html">Meeting Home</a></li>
+    <li><a href="schedule.html">Schedule</a></li>
+    <li><a href="participants.html">Participants</a></li>
+    <li><a href="organisers.html">Organisers</a></li>
+ </ul>
+  <h2>TKP Website</h2>
+  <ul class="nav">
+    <li><a href="/">TKP Home</a></li>
+    <li><a href="/meetings/">Meetings</a></li>
+  </ul>
+</div>
+
+<div id="mainbody">
+
+  <div id="content">
+    {{ content }}
+  </div>
+
+  <div id="footer">
+    <p>Page maintained by the <a href="organisers.html">LOC</a>.</p>
+  </div>
+
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,162 @@
+body {
+  font-family: sans-serif;
+  font-size: 90%;
+  color: #666666;
+  background-color: #32668E;
+}
+
+div#wholepage {
+  margin: auto;
+/*  max-width: 1024px;
+  padding-left: 2%;
+  padding-right: 2%; */
+}
+
+div#mainbody {
+/*  min-width: 680px; */
+}
+
+h1 {
+  color:#32668E; 
+  font-size:150%; 
+  font-family: "trebuchet ms", "lucida sans", arial, sans-serif; 
+  font-weight:normal;
+}
+
+h2 {
+  color:#32668E; 
+  font-size:120%; 
+  font-family: "trebuchet ms", "lucida sans", arial, sans-serif; 
+  font-weight:normal;
+}
+
+h3 {
+  color:#32668E; 
+  font-size:110%; 
+  font-family: "trebuchet ms", "lucida sans", arial, sans-serif; 
+  font-weight:normal;
+}
+
+h4 {
+  color:#32668E; 
+  font-size:100%; 
+  font-family: "trebuchet ms", "lucida sans", arial, sans-serif; 
+  font-weight:normal;
+}
+
+div.mainheader {
+  margin:0;
+  padding:45px 15px 15px 15px;
+  text-align:left;
+  background-color: white;
+  margin-bottom: 15px;
+/*  min-width: 745px;
+  max-height: 75px; */
+  border: none;
+}
+
+div.mainheader h1 {
+  font-size:300%; margin:0 0 5px 0; padding:0;}
+
+div.mainheader p {
+  text-indent:4em; color:#32668E; margin:0; padding:0.2em; font-weight:bold;
+}
+
+div#sidecontainer {
+  display:none;
+}
+
+div#sidecontainer h2 {
+  display:none;
+}
+
+
+#content h1 {margin:0; padding:0.1em; text-indent:1.5cm;}
+#content h2 {margin:0; padding:0.1em; text-indent:1.5cm;}
+#content h3 {margin:0; padding:0.1em; text-indent:1.5cm;}
+#content h4 {margin:0; padding:0.1em; text-indent:1.5cm;}
+#content h5 {margin:0; padding:0.1em; text-indent:1.5cm;}
+
+a:link {
+  color: #666666;
+  text-decoration: none;
+}
+
+.nav {
+margin:0 0 0 0; padding:0; list-style-type:none; background-color:#FFFFFF;}
+
+.nav li {
+margin:0; padding:0; display:block;
+border-bottom:1px solid black; 
+}
+
+.nav a:link, .nav a:visited {
+display:block; margin:0; text-decoration:none; color:#32668E; margin:0; padding:0.5em;}
+
+.nav a:hover {
+display:block; margin:0; text-decoration:none; color:#dddddd; margin:0; padding:0.5em; background-color:#32668E;}
+
+.nav a:active {
+display:block; margin:0; text-decoration:none; color:#dddddd; margin:0; padding:0.5em;}
+
+div#footer {
+  display: none;
+}
+
+div#content {
+  text-align: justify;
+  background-color: white;
+  border: none;
+}
+
+ul.errorlist {
+  color: red;
+  padding: 0;
+  margin: 0;
+}
+
+ul.errorlist li {
+  list-style-position: inside;
+}
+
+table.register th {
+  padding-right: 0.7em;
+}
+
+table.register td {
+  padding-right: 1.5em;
+}
+
+table.profile th {
+  padding-right: 1.5em;
+}
+
+table.participants {
+  margin-top: 0.5em;
+  margin-bottom: 1.0em;
+}
+
+table.participants td {
+  padding-right: 2.0em;
+  padding-bottom: 0.15em;
+  padding-top: 0.15em;
+  text-align: left;
+}
+
+div.contrib {
+  border: thin black solid;
+  margin-top: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+table.edittable th {
+  padding-right: 1.5em;
+  vertical-align: top;
+}
+
+table.edittable td {
+  padding-right: 1.5em;
+  vertical-align: top;
+}
+
