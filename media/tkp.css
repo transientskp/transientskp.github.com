@@ -160,6 +160,10 @@ table.participants {
 }
 
 table.participants td {
+  vertical-align: top;
+}
+
+table.participants td {
   padding-right: 2.0em;
   padding-bottom: 0.15em;
   padding-top: 0.15em;
